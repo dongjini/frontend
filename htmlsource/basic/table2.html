@@ -4,12 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 80%;
+      }
+      table,
+      tr,
+      td {
+        border: 1px solid black;
+        /* border-radius: 10px;  */
+        border-color: black;
+        text-align: center;
+      }
+      h2 {
+        background-color: rgb(203, 245, 255);
+      }
+      img {
+        width: 100px;
+        height: 100px;
+      }
+    </style>
   </head>
   <body>
-    <table border="1" width="600">
+    <table>
       <tr>
         <td rowspan="3">
-          <img src="../image/guri.jpg" alt="구리" />
+          <img src="../image/cute.png" alt="개굴" />
         </td>
         <td colspan="4">
           <h2>이력서</h2>
@@ -17,28 +38,33 @@
       </tr>
       <tr>
         <td rowspan="2">성명</td>
-        <td colspan="2" rowspan="2">&nbsp;</td>
+        <td colspan="2" rowspan="2">개 구 리</td>
         <td>생년월일</td>
       </tr>
       <tr>
-        <td>&nbsp;</td>
+        <td>2000-10-10</td>
       </tr>
       <tr>
         <td>이메일</td>
-        <td colspan="4">&nbsp;</td>
+        <td colspan="4">ka@gmail.com</td>
       </tr>
       <tr>
         <td>현주소</td>
-        <td colspan="4">&nbsp;</td>
+        <td colspan="4">떡잎마을</td>
       </tr>
       <tr>
         <td>연락처</td>
-        <td colspan="4">&nbsp;</td>
+        <td colspan="4">010-1234-1234</td>
       </tr>
       <tr>
         <td>기간</td>
         <td colspan="2">학력사항</td>
         <td colspan="2">비고</td>
+      </tr>
+      <tr>
+        <td>2025.04.02</td>
+        <td colspan="2">박사</td>
+        <td colspan="2">개구리학</td>
       </tr>
     </table>
   </body>
