@@ -11,7 +11,7 @@
         /* width: 100%; */
         /* height: 100px; */
         padding: 20px;
-        /* padding: 시계방향(top, right, bottom, left); */
+        /* padding(안쪽여백): 시계방향(top, right, bottom, left); */
         /* padding: 10px 5px 15px 10px; */
         /* padding: 10px 15px; 위아래, 좌우 */
         /* padding: 10px 15px 20px ; */
@@ -21,22 +21,52 @@
         /* width: 100%; */
         /* height: 100px; */
         padding: 10px;
+        display: inline-block;
+      }
+      div {
+        margin: 20px; /* margin(바깥쪽여백) = 시계방향(top, right, botton, left)*/
+        text-align: center;
+      }
+      div a {
+        width: 40px;
+        height: 40px;
+        background-color: blue;
+        color: white;
+        display: inline-block;
+        text-decoration: none;
+        line-height: 40px;
+      }
+      p:nth-of-type(2) {
+        /* display: none; -> 자리를 안비워 두고 감춤*/
+        visibility: hidden; /* 숨겨진 요소의 자리는 비워 둠 */
       }
     </style>
   </head>
   <body>
     <!-- 
         block (p, div) : 한 행 다 사용 / width : 100%, height : 0 => 내용만큼 사용, 지정 가능
-        inline (a, span) : 내용만큼만 사용 / width, height 를 가질 수 없음
+        inline (a, span) : 내용만큼만 사용 / width, height 를 가질 수 없음 / 상, 하 padding 가질 수 없음
+
+        display : inline, block, inline-block, none(요소 감춤)
     -->
     <p>block level</p>
     <span>inline level</span>
+    <span>inline level2</span>
     <div>
       <a href="">1</a>
       <a href="">2</a>
       <a href="">3</a>
       <a href="">4</a>
       <a href="">5</a>
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium delectus beatae ipsum ducimus odio dolores,
+      aut voluptates dignissimos at fugit, facere ratione tempora voluptas optio harum odit, similique ipsa quae!
+    </p>
+    <div>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, nulla voluptatibus. Aperiam voluptate
+      aspernatur dicta dolorum, ab deserunt. Magnam numquam nulla aut ratione porro veritatis maxime maiores laborum
+      quisquam officia!
     </div>
   </body>
 </html>
