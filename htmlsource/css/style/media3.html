@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 전체여백 0 */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* body 배경색 : #ecf0f1 */
+      body {
+        background-color: #ecf0f1;
+      }
+
+      /* wrapper : max-width : 60rem, width:100%, */
+      .wrapper {
+        max-width: 60rem;
+        width: 100%;
+        margin: 2rem auto;
+      }
+
+      /* flexbg : flex 컨테이너 */
+      .flexbg {
+        display: flex;
+      }
+
+      /* main : 배경 흰색, 안쪽여배 25, order2 */
+      .flexbg main {
+        background-color: white;
+        padding: 25px;
+        order: 2;
+      }
+
+      .flexbg .sidebar {
+        padding: 25px;
+        width: 20%;
+      }
+      /* left : 배경 #3498db,  order1 */
+      .flexbg .left {
+        background: #3498db;
+        order: 1;
+      }
+      /* right : 배경 #34495e,  order3 */
+      .flexbg .right {
+        background-color: #34495e;
+        order: 3;
+      }
+      @media screen and (max-width: 768px) {
+        .flexbg {
+          flex-wrap: wrap;
+        }
+        .flexbg main {
+          width: 100%;
+          order: 1;
+        }
+        .flexbg .sidebar {
+          width: 50%;
+        }
+        .flexbg .left {
+          order: 2;
+        }
+      }
+      @media screen and (max-width: 480px) {
+        .flexbg .sidebar {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper flexbg">
+      <main>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur pariatur eligendi natus, non cupiditate
+          atque! Sit animi deserunt, ad architecto voluptatum explicabo doloremque recusandae sed nemo quod voluptatem
+          qui provident, omnis corporis culpa illo. Dicta eaque doloremque assumenda, fugit atque dolorem eligendi nam
+          exercitationem similique molestiae vitae ab consequatur tenetur dolorum! Dicta aperiam eaque ratione enim
+          praesentium veniam dolorem velit recusandae, magnam a, autem exercitationem beatae itaque. Repellat sint fugit
+          aspernatur fuga dolorem illo necessitatibus, ipsum aliquid voluptatibus dolorum atque officia rerum! Facilis,
+          ipsa molestiae placeat doloremque eos officiis et architecto maxime voluptates ipsum dolorum necessitatibus.
+          Laboriosam et eveniet dicta.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur pariatur eligendi natus, non cupiditate
+          atque! Sit animi deserunt, ad architecto voluptatum explicabo doloremque recusandae sed nemo quod voluptatem
+          qui provident, omnis corporis culpa illo. Dicta eaque doloremque assumenda, fugit atque dolorem eligendi nam
+          exercitationem similique molestiae vitae ab consequatur tenetur dolorum! Dicta aperiam eaque ratione enim
+          praesentium veniam dolorem velit recusandae, magnam a, autem exercitationem beatae itaque. Repellat sint fugit
+          aspernatur fuga dolorem illo necessitatibus, ipsum aliquid voluptatibus dolorum atque officia rerum! Facilis,
+          ipsa molestiae placeat doloremque eos officiis et architecto maxime voluptates ipsum dolorum necessitatibus.
+          Laboriosam et eveniet dicta.
+        </p>
+      </main>
+      <aside class="sidebar left">
+        <p>You might have some latest posts here on the left</p>
+      </aside>
+      <aside class="sidebar right">
+        <p>And some other widgets here on the right</p>
+      </aside>
+    </div>
+  </body>
+</html>

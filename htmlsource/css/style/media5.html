@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 전체 여백0 */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* body : 배경색 - #333338, 글자색 #444 */
+      body {
+        background-color: #333338;
+        color: #444;
+      }
+
+      /* container : flex */
+      .container {
+        display: flex;
+      }
+      /* sidebar : 바깥여백 : 10, 안쪽여백 6, 배경색 #eee */
+      .sidebar {
+        margin: 10px;
+        padding: 6px;
+        background-color: #eee;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+      }
+      /* panel : 바깥여백 : 10, 안쪽여백 20, 배경색 #fff */
+      .panel {
+        margin: 10px;
+        padding: 20px;
+        background-color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <section class="main-container">
+        <div class="panel">
+          <h1>Main Title</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, ducimus excepturi magni laudantium mollitia
+            officiis autem adipisci voluptas nobis earum distinctio. Sequi, maiores. Quo ut rem dolorum ducimus velit
+            cum.
+          </p>
+          <img src="../../image/bg.png" alt="" />
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt consequatur atque natus sunt mollitia est
+            blanditiis delectus. Dolorum accusantium excepturi libero, optio consequuntur magnam, nemo sunt odit ut
+            consectetur, ipsa fugiat nobis! Explicabo impedit dolore, vero suscipit, laboriosam at repellendus, possimus
+            similique nesciunt harum dolorum! Molestiae dolore debitis dignissimos temporibus.
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum ab dicta, architecto debitis asperiores
+            voluptates quia ea voluptatibus sapiente aliquid nobis natus, ducimus eligendi amet vero, perferendis quam
+            dolor perspiciatis.
+          </p>
+          <h3>Subtitle</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem, quas ratione doloremque mollitia deleniti
+            pariatur at molestiae necessitatibus omnis numquam natus doloribus nam possimus officia, esse, nobis in
+            ullam saepe vitae qui tempora itaque quidem! Voluptates repellat laboriosam ex quos similique cupiditate,
+            officia hic odio vel. Repudiandae rerum aliquam nulla.
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem, quas ratione doloremque mollitia deleniti
+            pariatur at molestiae necessitatibus omnis numquam natus doloribus nam possimus officia, esse, nobis in
+            ullam saepe vitae qui tempora itaque quidem! Voluptates repellat laboriosam ex quos similique cupiditate,
+            officia hic odio vel. Repudiandae rerum aliquam nulla.
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem, quas ratione doloremque mollitia deleniti
+            pariatur at molestiae necessitatibus omnis numquam natus doloribus nam possimus officia, esse, nobis in
+            ullam saepe vitae qui tempora itaque quidem! Voluptates repellat laboriosam ex quos similique cupiditate,
+            officia hic odio vel. Repudiandae rerum aliquam nulla.
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem, quas ratione doloremque mollitia deleniti
+            pariatur at molestiae necessitatibus omnis numquam natus doloribus nam possimus officia, esse, nobis in
+            ullam saepe vitae qui tempora itaque quidem! Voluptates repellat laboriosam ex quos similique cupiditate,
+            officia hic odio vel. Repudiandae rerum aliquam nulla.
+          </p>
+        </div>
+      </section>
+      <aside class="sidebar">
+        <div class="panel">
+          <h3>Item1</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="panel">
+          <h3>Item2</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim accusantium qui ab assumenda illum fugit nemo
+            possimus nisi omnis dolor, tenetur itaque asperiores nesciunt rem distinctio quia cum inventore atque?
+          </p>
+        </div>
+        <div class="panel">
+          <h3>Item3</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim accusantium qui ab assumenda illum fugit nemo
+            possimus nisi omnis dolor, tenetur itaque asperiores nesciunt rem distinctio quia cum inventore atque?
+          </p>
+        </div>
+        <div class="panel">
+          <h3>Item4</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim accusantium qui ab assumenda illum fugit nemo
+            possimus nisi omnis dolor, tenetur itaque asperiores nesciunt rem distinctio quia cum inventore atque?
+          </p>
+        </div>
+      </aside>
+    </div>
+  </body>
+</html>
