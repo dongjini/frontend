@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .alert-box {
+        background-color: rgb(255, 187, 198);
+        padding: 20px;
+        color: rgb(255, 255, 255);
+        border-radius: 5px;
+        margin: 10px;
+        position: relative;
+        visibility: hidden;
+      }
+      button {
+        border: 0;
+        border-radius: 10px;
+        padding: 10px;
+        background-color: gray;
+        color: white;
+        cursor: pointer;
+      }
+      .close {
+        position: absolute;
+        right: 10px;
+        top: 0;
+        cursor: pointer;
+        /* visibility: visible; */
+      }
+      /* 알림창 숨기기  */
+    </style>
+  </head>
+  <body>
+    <div class="alert-box">
+      알림창
+      <span class="close">X</span>
+    </div>
+    <button class="show">알림창 보여주기</button>
+    <script>
+      document.querySelector(".show").addEventListener("click", () => {
+        document.querySelector(".alert-box").style.visibility = "visible";
+      });
+      document.querySelector(".close").addEventListener("click", () => {
+        document.querySelector(".alert-box").style.visibility = "hidden";
+      });
+    </script>
+  </body>
+</html>
